@@ -13,12 +13,12 @@ function Resume() {
           </ResumeItem>
 
           <ResumeItem title="skills">
-            <ResumeEntry text="Matlab - Beginner" />
-            <ResumeEntry text="Microsoft Office - Intermediate" />
-            <ResumeEntry text="Origin Lab - Beginner" />
-            <ResumeEntry text="Web Development - Beginner" />
-            <ResumeEntry text="Web Design - Beginner" />
-            <ResumeEntry text="Web Programming - Beginner" />
+            <ResumeEntry text="Matlab - Basic" />
+            <ResumeEntry text="Microsoft Office - Proficient" />
+            <ResumeEntry text="Origin Lab - Basic" />
+            <ResumeEntry text="Web Development - Proficient" />
+            <ResumeEntry text="Web Design - Basic" />
+            <ResumeEntry text="Web Programming - Basic" />
           </ResumeItem>
 
           <ResumeItem title="work experience">

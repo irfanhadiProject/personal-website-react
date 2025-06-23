@@ -10,12 +10,7 @@ body {
   color: #6c6e72;
 }
 
-body,
-h1,
-h2,
-h3,
-ul,
-li {
+* {
   margin: 0;
 }
 
@@ -272,7 +267,7 @@ li {
   cursor: pointer;
   margin: 10px;
   width: 400px;
-  height: 375px;
+
   transition: all 0.3s ease;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
@@ -281,7 +276,7 @@ li {
   scale: 1.05;
 }
 
-.portofolio-item:hover h3 {
+.portofolio-item:hover .portofolio-item-title {
   color: #279eff;
 }
 
@@ -290,14 +285,14 @@ li {
   display: inline-block;
   margin-left: 5px;
   transition: transform 0.3s ease;
-  color: inherit; /* atau sesuaikan warna panahnya */
+  color: inherit;
 }
 
 .portofolio-item:hover .portofolio-item-title::after {
   transform: translateX(5px);
 }
 
-.portofolio-content img {
+.portofolio-item-image {
   object-fit: cover;
   object-position: top left;
   width: 100%;
@@ -307,11 +302,12 @@ li {
 .portofolio-item-content {
   padding: 20px;
   background-color: #ffffff;
+  height: 120px;
   flex-grow: 1;
 }
 
-.portofolio-item-content p {
-  margin: 0px;
+.portofolio-item-description {
+  color: #6c6e72;
   margin-top: 10px;
 }
 
@@ -338,7 +334,7 @@ li {
   box-sizing: content-box;
   margin: 10px;
   width: 400px;
-  height: 550px;
+  height: 500px;
   transition: all 0.3s ease;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
