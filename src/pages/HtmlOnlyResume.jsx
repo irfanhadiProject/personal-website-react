@@ -1,6 +1,6 @@
 function HtmlOnlyResume() {
   return (
-    <div>
+    <>
       <h1>Irfan Hadi</h1>
       <img
         src="/src/assets/images/my-picture.jpg"
@@ -73,7 +73,7 @@ function HtmlOnlyResume() {
           <a href="./public/my hobbies.html">My hobbies</a>
         </li>
       </ul>
-    </div>
+    </>
   );
 }
 

@@ -1,17 +1,23 @@
 /* GLOBAL STYLE */
+* {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  box-sizing: content-box;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
-body {
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  margin: 0;
-  color: #6c6e72;
+main {
+  flex: 1;
 }
 
-* {
-  margin: 0;
+.app-layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 h2,
@@ -60,10 +66,10 @@ li {
   display: flex;
   justify-content: center;
   background-color: #fcfeff;
+  box-shadow: 0px 2px 8px 4px rgba(0, 0, 0, 0.1);
   padding: 20px 0;
   width: 100%;
   z-index: 999;
-  box-sizing: content-box;
 }
 
 .menu-toggle {
@@ -97,6 +103,7 @@ li {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+
   width: 730px;
 }
 
@@ -206,6 +213,7 @@ li {
 
 .resume-content {
   display: flex;
+  color: #6c6e72;
 }
 
 .resume-item {
@@ -215,7 +223,7 @@ li {
   background: #ffffff;
   width: 400px;
   margin: 10px;
-  box-sizing: content-box;
+
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   padding: 20px;
   text-align: center;
@@ -263,11 +271,9 @@ li {
 .portofolio-item {
   display: flex;
   flex-direction: column;
-  box-sizing: content-box;
   cursor: pointer;
   margin: 10px;
   width: 400px;
-
   transition: all 0.3s ease;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
@@ -326,12 +332,12 @@ li {
 .about-content {
   display: flex;
   align-items: center;
+  color: #6c6e72;
 }
 
 .about-item {
   display: flex;
   flex-direction: column;
-  box-sizing: content-box;
   margin: 10px;
   width: 400px;
   height: 500px;

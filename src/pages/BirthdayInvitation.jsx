@@ -1,6 +1,6 @@
 function BirthdayInvitation() {
   return (
-    <div>
+    <article>
       <h1>My birthday party!</h1>
       <h2>On the 3rd September</h2>
       <img
@@ -29,7 +29,7 @@ function BirthdayInvitation() {
         Q: who is this? <br />
         A: Joe
       </p>
-    </div>
+    </article>
   );
 }
 
