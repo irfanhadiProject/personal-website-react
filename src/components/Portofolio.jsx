@@ -1,11 +1,12 @@
 import PortofolioItem from './PortofolioItem';
+import styles from './Portofolio.module.css';
 
 function Portofolio() {
   return (
-    <article id="portofolio-section" className="portofolio">
-      <div className="container-portofolio">
-        <h2 className="title">my project</h2>
-        <ul className="portofolio-content">
+    <article id="portofolio-section" className={styles.portofolio}>
+      <div className={styles.container}>
+        <h2 className={styles.title}>my project</h2>
+        <ul className={styles.content}>
           <PortofolioItem
             link="/birthday-invitation"
             image="/src/assets/images/birthday-invitation.png"

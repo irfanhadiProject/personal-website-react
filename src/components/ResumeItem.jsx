@@ -1,8 +1,10 @@
+import styles from './ResumeItem.module.css';
+
 function ResumeItem({ title, children }) {
   return (
-    <li className="resume-item">
-      <h3 className="resume-item-title">{title}</h3>
-      <ul className="resume-item-content">{children}</ul>
+    <li className={styles.item}>
+      <h3 className={styles.title}>{title}</h3>
+      <ul className={styles.content}>{children}</ul>
     </li>
   );
 }

@@ -1,11 +1,12 @@
 import AboutItem from './AboutItem';
+import styles from './About.module.css';
 
 function About() {
   return (
-    <article id="about-section" className="about">
-      <div className="container-about">
-        <h2 className="title">About</h2>
-        <ul className="about-content">
+    <article id="about-section" className={styles.about}>
+      <div className={styles.container}>
+        <h2 className={styles.title}>About</h2>
+        <ul className={styles.content}>
           <AboutItem
             image="/src/assets/images/dog-gaming.gif"
             alt="Gaming"

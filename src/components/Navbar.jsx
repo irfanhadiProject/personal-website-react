@@ -1,5 +1,6 @@
 import { useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
+import styles from './Navbar.module.css';
 
 function Navbar() {
   const navMenuRef = useRef(null);
@@ -10,23 +11,26 @@ function Navbar() {
   }
 
   return (
-    <nav className="navbar">
-      <div className="nav-container">
-        <a className="logo">IRFAN HADI</a>
-        <button className="menu-toggle" onClick={handleToggleMenu}>
+    <nav className={styles.navbar}>
+      <div className={styles.container}>
+        <a className={styles.logo}>IRFAN HADI</a>
+        <button className={styles.menu} onClick={handleToggleMenu}>
           &#9776;
         </button>
-        <ul ref={navMenuRef} className={`navigation ${menuOpen ? 'show' : ''}`}>
-          <li className="nav-item">
+        <ul
+          ref={navMenuRef}
+          className={`${styles.navigation} ${menuOpen ? `${styles.show}` : ''}`}
+        >
+          <li>
             <Link to="/">Home</Link>
           </li>
-          <li className="nav-item">
+          <li>
             <a href="#resume-section">Resume</a>
           </li>
-          <li className="nav-item">
+          <li>
             <a href="#portofolio-section">Portofolio</a>
           </li>
-          <li className="nav-item">
+          <li>
             <a href="#about-section">About</a>
           </li>
         </ul>

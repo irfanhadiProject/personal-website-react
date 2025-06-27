@@ -1,8 +1,10 @@
+import styles from './About.module.css';
+
 function AboutItem({ image, alt, title, description }) {
   return (
-    <li className="about-item">
+    <li className={styles.item}>
       <img src={image} alt={alt} />
-      <div className="about-item-content">
+      <div>
         <h3>{title}</h3>
         <p>{description}</p>
       </div>

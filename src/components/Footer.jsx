@@ -1,7 +1,9 @@
+import styles from './Footer.module.css';
+
 function Footer() {
   return (
     <footer>
-      <div className="container-footer">
+      <div className={styles.container}>
         <ul>
           <li>
             <a href="https://www.linkedin.com/in/irfan-hadi-364471223/">
@@ -17,7 +19,7 @@ function Footer() {
             </a>
           </li>
         </ul>
-        <p className="copyright">© Irfan Hadi</p>
+        <p className={styles.copyright}>© Irfan Hadi</p>
       </div>
     </footer>
   );

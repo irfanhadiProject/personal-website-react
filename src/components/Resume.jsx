@@ -1,12 +1,13 @@
 import ResumeEntry from './ResumeEntry';
 import ResumeItem from './ResumeItem';
+import styles from './Resume.module.css';
 
 function Resume() {
   return (
-    <article id="resume-section" className="resume">
-      <div className="container-resume">
-        <h2 className="title">resume</h2>
-        <ul className="resume-content">
+    <article id="resume-section" className={styles.resume}>
+      <div className={styles.container}>
+        <h2 className={styles.title}>resume</h2>
+        <ul className={styles.content}>
           <ResumeItem title="education">
             <ResumeEntry text="Bachelor of Physics - ITS (2019–2024)" />
             <ResumeEntry text="Science - MAN 2 Pontianak (2016–2019)" />
