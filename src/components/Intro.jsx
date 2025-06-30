@@ -7,9 +7,9 @@ function Intro() {
         <div className={styles.content}>
           <h1 className={styles.name}>I'm Irfan</h1>
           <p className={styles.description}>
-            Fresh graduate in Physics, passionate about Web Development. Skilled
-            in HTML, CSS, JavaScript, and React.js. Quick learner,
-            self-motivated, and excited to grow through real-world projects.
+            Physics graduate, passionate about Web Development. Skilled in HTML,
+            CSS, JavaScript, and React.js. Quick learner, self-motivated, and
+            excited to grow through real-world projects.
           </p>
         </div>
         <div className={styles.picture}>

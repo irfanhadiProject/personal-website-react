@@ -1,6 +1,6 @@
 function MovieRanking() {
   return (
-    <>
+    <article>
       <h1> The Best Movie According to Myself </h1>
       <h2> My Top 3 Favourite movie</h2>
       <hr />
@@ -30,7 +30,7 @@ function MovieRanking() {
         The plot in this movie make me feel stressed and relieved at the same
         time.{' '}
       </p>
-    </>
+    </article>
   );
 }
 
