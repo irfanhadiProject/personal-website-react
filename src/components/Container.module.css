@@ -1,0 +1,18 @@
+.container {
+  max-width: 1024px;
+}
+
+.title {
+  margin-bottom: 40px;
+  padding-left: 10px;
+}
+
+.content {
+  display: flex;
+}
+
+@media (max-width: 1024px) {
+  .content {
+    flex-direction: column;
+  }
+}

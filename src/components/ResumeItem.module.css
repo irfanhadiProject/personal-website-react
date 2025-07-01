@@ -31,6 +31,10 @@
   margin-bottom: 0px;
 }
 
+.content p {
+  color: #6c6e72;
+}
+
 @media (max-width: 500px) {
   .item {
     height: auto;

@@ -5,16 +5,6 @@
   background-color: #fcfeff;
 }
 
-.container {
-  max-width: 1024px;
-}
-
-.content {
-  display: flex;
-  align-items: center;
-  color: #6c6e72;
-}
-
 .item {
   display: flex;
   flex-direction: column;
@@ -36,6 +26,7 @@
 }
 
 .item p {
+  color: #6c6e72;
   margin-top: 10px;
 }
 
