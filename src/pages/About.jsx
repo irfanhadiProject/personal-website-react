@@ -1,10 +1,10 @@
-import AboutItem from './AboutItem';
+import AboutItem from '../components/AboutItem';
 import styles from './About.module.css';
-import Container from './Container';
+import Container from '../components/Container';
 
 function About() {
   return (
-    <article id="about-section" className={styles.about}>
+    <article className={styles.about}>
       <Container title="About">
         <AboutItem
           image="/src/assets/images/dog-gaming.gif"

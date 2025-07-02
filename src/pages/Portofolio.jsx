@@ -1,13 +1,13 @@
-import PortofolioItem from './PortofolioItem';
+import PortofolioItem from '../components/PortofolioItem';
 import styles from './Portofolio.module.css';
-import Container from './Container';
+import Container from '../components/Container';
 
 function Portofolio() {
   return (
-    <article id="portofolio-section" className={styles.portofolio}>
+    <article className={styles.portofolio}>
       <Container title="My project">
         <PortofolioItem
-          link="/birthday-invitation"
+          link="/portofolio/birthday-invitation"
           image="/src/assets/images/birthday-invitation.png"
           alt="birthday invitation"
           title="birthday party invitation"
@@ -15,7 +15,7 @@ function Portofolio() {
         />
 
         <PortofolioItem
-          link="/movie-ranking"
+          link="/portofolio/movie-ranking"
           image="/src/assets/images/movie-ranking.png"
           alt="movie ranking"
           title="favorite film ranking"
@@ -23,7 +23,7 @@ function Portofolio() {
         />
 
         <PortofolioItem
-          link="/html-only-resume"
+          link="/portofolio/html-resume"
           image="/src/assets/images/html-only-resume.png"
           alt="html only resume"
           title="html only resume"

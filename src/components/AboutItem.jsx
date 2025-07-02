@@ -1,4 +1,4 @@
-import styles from './About.module.css';
+import styles from '../pages/About.module.css';
 
 function AboutItem({ image, alt, title, description }) {
   return (

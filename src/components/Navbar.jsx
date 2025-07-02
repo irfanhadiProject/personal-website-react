@@ -13,7 +13,6 @@ function Navbar() {
   return (
     <nav className={styles.navbar}>
       <div className={styles.container}>
-        <a className={styles.logo}>IRFAN HADI</a>
         <button className={styles.menu} onClick={handleToggleMenu}>
           &#9776;
         </button>
@@ -25,13 +24,13 @@ function Navbar() {
             <Link to="/">Home</Link>
           </li>
           <li>
-            <a href="#resume-section">Resume</a>
+            <Link to="/resume">Resume</Link>
           </li>
           <li>
-            <a href="#portofolio-section">Portofolio</a>
+            <Link to="/portofolio">Portofolio</Link>
           </li>
           <li>
-            <a href="#about-section">About</a>
+            <Link to="/about">About</Link>
           </li>
         </ul>
       </div>

@@ -1,11 +1,11 @@
-import ResumeEntry from './ResumeEntry';
-import ResumeItem from './ResumeItem';
+import ResumeEntry from '../components/ResumeEntry';
+import ResumeItem from '../components/ResumeItem';
 import styles from './Resume.module.css';
-import Container from './Container';
+import Container from '../components/Container';
 
 function Resume() {
   return (
-    <article id="resume-section" className={styles.resume}>
+    <article className={styles.resume}>
       <Container title="Resume">
         <ResumeItem title="education">
           <ResumeEntry text="Bachelor of Physics - ITS (2019–2024)" />

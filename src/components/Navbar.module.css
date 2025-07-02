@@ -2,7 +2,6 @@
   display: flex;
   justify-content: center;
   background-color: #fcfeff;
-  box-shadow: 0px 2px 8px 4px rgba(0, 0, 0, 0.1);
   padding: 20px 0;
   width: 100%;
   z-index: 999;
@@ -21,30 +20,19 @@
   display: flex;
 }
 
-.logo {
-  display: flex;
-  justify-content: flex-start;
-  color: #06090c;
-  font-size: 1.65rem;
-  font-weight: 700;
-  line-height: 1.25;
-  letter-spacing: 1.4px;
-  flex: 0 0 auto;
-  width: 224px;
-}
-
 .navigation {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  width: 730px;
+  width: 1024px;
 }
 
 .navigation li a {
   position: relative;
   text-decoration: none;
+  font-weight: 500;
   margin: 10px;
-  color: #6c6e72;
+  color: #06090c;
 }
 
 .navigation li a::after {
@@ -71,7 +59,10 @@
 
 @media (max-width: 1024px) {
   .menu {
-    display: block;
+    display: flex;
+    justify-content: flex-end;
+    box-sizing: content-box;
+    width: 90vw;
   }
 
   .navigation {
