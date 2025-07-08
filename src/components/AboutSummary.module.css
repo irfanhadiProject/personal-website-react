@@ -1,0 +1,26 @@
+.profile {
+  display: flex;
+  justify-content: center;
+  padding: 50px 0;
+  background-color: #e6eaed;
+}
+
+.profile div {
+  max-width: 1024px;
+  padding: 0 20px;
+}
+
+.profile h2 {
+  margin-bottom: 40px;
+}
+
+.profile p {
+  display: flex;
+  color: #6c6e72;
+}
+
+@media (max-width: 1024px) {
+  .profile p {
+    flex-direction: column;
+  }
+}

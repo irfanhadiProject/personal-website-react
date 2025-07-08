@@ -1,0 +1,43 @@
+.project {
+  display: flex;
+  justify-content: center;
+  padding: 50px 0;
+  background-color: #fcfeff;
+}
+
+.project div {
+  max-width: 1024px;
+  padding: 0 20px;
+}
+
+.project h2 {
+  margin-bottom: 40px;
+}
+
+.project ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.project li {
+  display: flex;
+  gap: 2rem;
+}
+
+.project img {
+  width: 30%;
+  height: 30%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.project p {
+  display: flex;
+  color: #6c6e72;
+}
+
+@media (max-width: 1024px) {
+  .project p {
+    flex-direction: column;
+  }
+}

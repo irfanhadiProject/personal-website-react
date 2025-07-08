@@ -11,6 +11,7 @@ function Intro() {
             CSS, JavaScript, and React.js. Quick learner, self-motivated, and
             excited to grow through real-world projects.
           </p>
+          <button>Download Resume</button>
         </div>
         <div className={styles.picture}>
           <img

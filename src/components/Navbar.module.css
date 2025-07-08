@@ -30,9 +30,10 @@
 .navigation li a {
   position: relative;
   text-decoration: none;
-  font-weight: 500;
+  font-size: 1.15rem;
+  font-weight: 600;
   margin: 10px;
-  color: #06090c;
+  color: #6c6e72;
 }
 
 .navigation li a::after {

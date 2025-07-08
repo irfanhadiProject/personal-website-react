@@ -61,6 +61,12 @@ li {
   list-style: none;
 }
 
+button {
+  border: none;
+  box-sizing: border-box;
+  transition: all 0.2s ease;
+}
+
 .sticky {
   position: fixed;
   top: 0;
