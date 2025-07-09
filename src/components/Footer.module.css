@@ -1,5 +1,4 @@
 footer {
-  position: relative;
   background-color: #134d7c;
   display: flex;
   justify-content: center;
@@ -7,7 +6,8 @@ footer {
 
 footer ul {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 1rem;
 }
 
 footer p,
@@ -20,30 +20,18 @@ footer li {
   letter-spacing: 0.8px;
 }
 
-footer a {
-  color: #fcfeff;
-  transition: all 0.3s ease;
-}
-
-footer a:hover {
-  color: #279eff;
-}
-
 .container {
   display: flex;
   flex-direction: column;
-  width: 350px;
   padding: 20px;
 }
 
-.copyright {
-  grid-column: span 3;
-  justify-content: center;
-  align-items: center;
+.container img {
+  width: 25px;
 }
 
-@media (max-width: 370px) {
-  .container ul {
-    flex-direction: column;
-  }
+.copyright {
+  align-items: center;
+  font-size: 0.8rem;
+  font-weight: 300;
 }
