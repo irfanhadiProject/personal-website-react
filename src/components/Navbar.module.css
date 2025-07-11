@@ -27,7 +27,7 @@
   width: 1024px;
 }
 
-.navigation li a {
+.link {
   position: relative;
   text-decoration: none;
   font-size: 1.15rem;
@@ -36,7 +36,7 @@
   color: #6c6e72;
 }
 
-.navigation li a::after {
+.link::after {
   content: '';
   position: absolute;
   bottom: 0;
@@ -49,12 +49,16 @@
   transition: transform 0.3s ease;
 }
 
-.navigation li a:hover::after {
+.link:hover::after {
   transform: scaleY(1);
 }
 
-.navigation li a:hover {
+.link:hover {
   cursor: pointer;
+  color: #279eff;
+}
+
+.active {
   color: #279eff;
 }
 

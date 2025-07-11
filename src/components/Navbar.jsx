@@ -1,5 +1,5 @@
 import { useRef, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import styles from './Navbar.module.css';
 
 function Navbar() {
@@ -8,6 +8,10 @@ function Navbar() {
 
   function handleToggleMenu() {
     setMenuOpen((prev) => !prev);
+  }
+
+  function getLinkClass(isActive) {
+    return isActive ? `${styles.link} ${styles.active}` : styles.link;
   }
 
   return (
@@ -21,16 +25,36 @@ function Navbar() {
           className={`${styles.navigation} ${menuOpen ? `${styles.show}` : ''}`}
         >
           <li>
-            <Link to="/">Home</Link>
+            <NavLink
+              to="/"
+              className={({ isActive }) => getLinkClass(isActive)}
+            >
+              Home
+            </NavLink>
           </li>
           <li>
-            <Link to="/resume">Resume</Link>
+            <NavLink
+              to="/resume"
+              className={({ isActive }) => getLinkClass(isActive)}
+            >
+              Resume
+            </NavLink>
           </li>
           <li>
-            <Link to="/portofolio">Portofolio</Link>
+            <NavLink
+              to="/portofolio"
+              className={({ isActive }) => getLinkClass(isActive)}
+            >
+              Portofolio
+            </NavLink>
           </li>
           <li>
-            <Link to="/about">About</Link>
+            <NavLink
+              to="/about"
+              className={({ isActive }) => getLinkClass(isActive)}
+            >
+              About
+            </NavLink>
           </li>
         </ul>
       </div>

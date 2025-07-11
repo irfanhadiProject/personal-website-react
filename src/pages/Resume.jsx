@@ -8,24 +8,38 @@ function Resume() {
     <article className={styles.resume}>
       <Container title="Resume">
         <ResumeItem title="education">
-          <ResumeEntry text="Bachelor of Physics - ITS (2019–2024)" />
-          <ResumeEntry text="Science - MAN 2 Pontianak (2016–2019)" />
+          <ResumeEntry text="Bachelor of Physics - ITS" tag="2019–2024" />
+          <ResumeEntry text="Science - MAN 2 Pontianak" tag="2016–2019" />
         </ResumeItem>
 
         <ResumeItem title="skills">
-          <ResumeEntry text="Matlab - Basic" />
-          <ResumeEntry text="Microsoft Office - Proficient" />
-          <ResumeEntry text="Origin Lab - Basic" />
-          <ResumeEntry text="Web Development - Proficient" />
-          <ResumeEntry text="Web Design - Basic" />
-          <ResumeEntry text="Web Programming - Basic" />
+          <ResumeEntry text="Matlab" tag="Basic" />
+          <ResumeEntry text="Microsoft Office" tag="Proficient" />
+          <ResumeEntry text="Origin Lab" tag="Basic" />
+          <ResumeEntry text="Web Development" tag="Proficient" />
+          <ResumeEntry text="Web Design" tag="Basic" />
+          <ResumeEntry text="Web Programming" tag="Basic" />
+        </ResumeItem>
+
+        <ResumeItem title="course">
+          <ResumeEntry
+            text="Udemy - The complete 2023 web development bootcamp"
+            tag="2023-2024"
+          />
+          <ResumeEntry
+            text="Udemy - The ultimate react course 2024: React, Redux, & more"
+            tag="2024-2025"
+          />
         </ResumeItem>
 
         <ResumeItem title="work experience">
-          <ResumeEntry text="Electrospinning Lab Assistant (2022–2023)" />
-          <ResumeEntry text="Private Quran Teacher (2022–2023)" />
-          <ResumeEntry text="Math/Physics Tutor for High School (2025–Present)" />
-          <ResumeEntry text="Math Tutor for Elementary (2025–Present)" />
+          <ResumeEntry text="Electrospinning Lab Assistant" tag="2022–2023" />
+          <ResumeEntry text="Private Quran Teacher" tag="2022–2023" />
+          <ResumeEntry
+            text="Math/Physics Tutor for High School"
+            tag="2025–Present"
+          />
+          <ResumeEntry text="Math Tutor for Elementary" tag="2025–Present" />
         </ResumeItem>
       </Container>
     </article>
