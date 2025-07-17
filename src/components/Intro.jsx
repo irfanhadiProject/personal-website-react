@@ -11,7 +11,9 @@ function Intro() {
             CSS, JavaScript, and React.js. Quick learner, self-motivated, and
             excited to grow through real-world projects.
           </p>
-          <button>Download Resume</button>
+          <a href="/CV_Irfan_Hadi.pdf" download="CV_Irfan_Hadi.pdf">
+            <button>Download Resume</button>
+          </a>
         </div>
         <div className={styles.picture}>
           <img

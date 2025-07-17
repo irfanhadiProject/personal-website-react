@@ -27,7 +27,7 @@
 
 .picture {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   width: 40%;
 }
@@ -35,8 +35,8 @@
 .image {
   border: 2px solid #fcfeff;
   border-radius: 50%;
-  height: 200px;
-  width: 200px;
+  height: 250px;
+  width: 250px;
 }
 
 .intro button {

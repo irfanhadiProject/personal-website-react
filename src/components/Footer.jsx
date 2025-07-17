@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import styles from './Footer.module.css';
 
 function Footer() {
@@ -7,24 +6,24 @@ function Footer() {
       <div className={styles.container}>
         <ul>
           <li>
-            <Link to="https://www.linkedin.com/in/irfan-hadi-364471223/">
+            <a to="https://www.linkedin.com/in/irfan-hadi-364471223/">
               <img src="/linkedin-icon.svg" />
-            </Link>
+            </a>
           </li>
           <li>
-            <Link to="https://www.instagram.com/irfan._.hadi/">
+            <a to="https://www.instagram.com/irfan._.hadi/">
               <img src="/instagram-icon.svg" />
-            </Link>
+            </a>
           </li>
           <li>
-            <Link to="https://github.com/irfanhadiProject">
+            <a to="https://github.com/irfanhadiProject">
               <img src="/github-icon.svg" />
-            </Link>
+            </a>
           </li>
           <li>
-            <Link to="https://irfanhadiproject.github.io/personal-website/">
+            <a to="https://irfanhadiproject.github.io/personal-website/">
               <img src="/web-icon.svg" />
-            </Link>
+            </a>
           </li>
         </ul>
         <p className={styles.copyright}>Copyright ©2025 All rights reserved</p>
