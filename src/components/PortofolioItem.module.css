@@ -35,7 +35,18 @@
   height: 200px;
 }
 
-.content span {
+.description {
+  color: #6c6e72;
+  font-size: 1rem;
+}
+
+.meta {
+  display: flex;
+  gap: 1rem;
+  font-size: 1.125rem;
+}
+
+.year {
   color: white;
   background-color: #134d7c;
   font-size: 0.95rem;
@@ -45,8 +56,8 @@
   align-self: flex-start;
 }
 
-.description {
-  color: #6c6e72;
+.category {
+  color: #64748b;
 }
 
 @media (max-width: 700px) {

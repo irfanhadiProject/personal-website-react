@@ -78,6 +78,7 @@
     top: 70px;
     right: 0;
     width: 150px;
+    gap: 0.25rem;
     padding: 1rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.281);
     transition: all 0.3s ease;

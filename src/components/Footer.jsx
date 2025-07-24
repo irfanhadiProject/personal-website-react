@@ -6,22 +6,22 @@ function Footer() {
       <div className={styles.container}>
         <ul>
           <li>
-            <a to="https://www.linkedin.com/in/irfan-hadi-364471223/">
+            <a href="https://www.linkedin.com/in/irfan-hadi-364471223/">
               <img src="/linkedin-icon.svg" />
             </a>
           </li>
           <li>
-            <a to="https://www.instagram.com/irfan._.hadi/">
+            <a href="https://www.instagram.com/irfan._.hadi/">
               <img src="/instagram-icon.svg" />
             </a>
           </li>
           <li>
-            <a to="https://github.com/irfanhadiProject">
+            <a href="https://github.com/irfanhadiProject">
               <img src="/github-icon.svg" />
             </a>
           </li>
           <li>
-            <a to="https://irfanhadiproject.github.io/personal-website/">
+            <a href="https://irfanhadiproject.github.io/personal-website/">
               <img src="/web-icon.svg" />
             </a>
           </li>
