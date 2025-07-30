@@ -1,4 +1,7 @@
 import styles from './ProjectHighlight.module.css';
+import booksReviewImage from '../assets/images/books-review-app.png';
+import movieRankingImage from '../assets/images/movie-ranking.png';
+import htmlResumeImage from '../assets/images/html-only-resume.png';
 
 function ProjectHighlight() {
   return (
@@ -7,7 +10,7 @@ function ProjectHighlight() {
         <h2>Project Highlight</h2>
         <ul>
           <li>
-            <img src="/src/assets/images/books-review-app.png" />
+            <img src={booksReviewImage} />
             <div>
               <h3>Books review app</h3>
               <div>
@@ -25,7 +28,7 @@ function ProjectHighlight() {
           </li>
 
           <li>
-            <img src="/src/assets/images/movie-ranking.png" />
+            <img src={movieRankingImage} />
             <div>
               <h3>HTML Project</h3>
               <div>
@@ -43,7 +46,7 @@ function ProjectHighlight() {
           </li>
 
           <li>
-            <img src="/src/assets/images/html-only-resume.png" />
+            <img src={htmlResumeImage} />
             <div>
               <h3>Resume website</h3>
               <div>

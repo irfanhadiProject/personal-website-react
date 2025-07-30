@@ -1,6 +1,10 @@
 import PortofolioItem from '../components/PortofolioItem';
 import styles from './Portofolio.module.css';
 import Container from '../components/Container';
+import booksReviewImage from '../assets/images/books-review-app.png';
+import movieRankingImage from '../assets/images/movie-ranking.png';
+import htmlResumeImage from '../assets/images/html-only-resume.png';
+import birthdayImage from '../assets/images/birthday-invitation.png';
 
 function Portofolio() {
   return (
@@ -8,7 +12,7 @@ function Portofolio() {
       <Container title="My project">
         <PortofolioItem
           link="https://github.com/irfanhadiProject/books-review"
-          image="/src/assets/images/books-review-app.png"
+          image={booksReviewImage}
           alt="Books review app"
           title="Books review app"
           year="2024"
@@ -18,7 +22,7 @@ function Portofolio() {
 
         <PortofolioItem
           link="/portofolio/movie-ranking"
-          image="/src/assets/images/movie-ranking.png"
+          image={movieRankingImage}
           alt="movie ranking"
           title="favorite film ranking"
           year="2023"
@@ -28,7 +32,7 @@ function Portofolio() {
 
         <PortofolioItem
           link="/portofolio/html-resume"
-          image="/src/assets/images/html-only-resume.png"
+          image={htmlResumeImage}
           alt="html only resume"
           title="html only resume"
           year="2023"
@@ -38,7 +42,7 @@ function Portofolio() {
 
         <PortofolioItem
           link="/portofolio/birthday-invitation"
-          image="/src/assets/images/birthday-invitation.png"
+          image={birthdayImage}
           alt="birthday invitation"
           title="birthday party invitation"
           year="2023"

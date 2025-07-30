@@ -1,4 +1,5 @@
 import styles from './Intro.module.css';
+import myPicture from '../assets/images/my-picture.jpg';
 
 function Intro() {
   return (
@@ -16,11 +17,7 @@ function Intro() {
           </a>
         </div>
         <div className={styles.picture}>
-          <img
-            className={styles.image}
-            src="/src/assets/images/my-picture.jpg"
-            alt="Irfan"
-          />
+          <img className={styles.image} src={myPicture} alt="Irfan" />
         </div>
       </div>
     </article>

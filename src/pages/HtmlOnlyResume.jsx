@@ -1,12 +1,10 @@
+import myPicture from '../assets/images/my-picture.jpg';
+
 function HtmlOnlyResume() {
   return (
     <article>
       <h1>Irfan Hadi</h1>
-      <img
-        src="/src/assets/images/my-picture.jpg"
-        height="200"
-        alt="Irfan's picture"
-      />
+      <img src={myPicture} height="200" alt="Irfan's picture" />
       <h2>Summary</h2>
       <p>
         I am a beginner web developer with a strong desire to learn and a high
