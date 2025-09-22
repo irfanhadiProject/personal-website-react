@@ -1,7 +1,8 @@
+import PortofolioItem from './PortofolioItem';
 import styles from './ProjectHighlight.module.css';
 import booksReviewImage from '../assets/images/books-review-app.png';
-import movieRankingImage from '../assets/images/movie-ranking.png';
-import htmlResumeImage from '../assets/images/html-only-resume.png';
+import triviaQuiz from '../assets/images/trivia-quiz.png';
+import weatherDashboard from '../assets/images/weather-dashboard.png';
 
 function ProjectHighlight() {
   return (
@@ -9,60 +10,35 @@ function ProjectHighlight() {
       <div>
         <h2>Project Highlight</h2>
         <ul>
-          <li>
-            <img src={booksReviewImage} />
-            <div>
-              <h3>Books review app</h3>
-              <div>
-                <span>2024</span>
-                <span>Full Stack</span>
-              </div>
-              <p>
-                A full-stack web application for reviewing books, built using
-                Node.js, Express, PostgreSQL, and EJS. The app features a
-                responsive UI, dynamic data rendering, and full CRUD
-                functionality.The project is version-controlled with Git and
-                hosted on GitHub.
-              </p>
-            </div>
-          </li>
+          <PortofolioItem
+            id="books-review"
+            image={booksReviewImage}
+            alt="Books review app"
+            title="Books review app"
+            year="2024"
+            category="Full Stack"
+            description="A full-stack web application for reviewing books, built using Node.js, Express, PostgreSQL, and EJS. The app features a responsive UI, dynamic data rendering, and full CRUD functionality.The project is version-controlled with Git and hosted on GitHub."
+          />
 
-          <li>
-            <img src={movieRankingImage} />
-            <div>
-              <h3>HTML Project</h3>
-              <div>
-                <span>2023</span>
-                <span>HTML</span>
-              </div>
+          <PortofolioItem
+            id="trivia-quiz"
+            image={triviaQuiz}
+            alt="Trivia Quiz Project"
+            title="Trivia Quiz"
+            year="2025"
+            category="React"
+            description="A responsive trivia quiz game built with React and Redux, featuring category-based questions from an external API. The app includes score tracking, instant feedback, and a clean UI styled with Tailwind CSS."
+          />
 
-              <p>
-                This project is a personal list of my favorite films, ranked
-                from the most memorable to those that are still absolutely
-                awesome. The primary goal was to practice building a clean,
-                well-structured HTML page using only semantic HTML elements.
-              </p>
-            </div>
-          </li>
-
-          <li>
-            <img src={htmlResumeImage} />
-            <div>
-              <h3>Resume website</h3>
-              <div>
-                <span>2023</span>
-                <span>HTML Layout</span>
-              </div>
-
-              <p>
-                This project is a personal online resume, built entirely using
-                plain HTML with no additional frameworks, styling, or scripting.
-                The purpose of this website is to present essential information
-                about myself including education, experience, skills, and
-                contact details in a simple format.
-              </p>
-            </div>
-          </li>
+          <PortofolioItem
+            id="weather-dashboard"
+            image={weatherDashboard}
+            alt="Weather dashboard"
+            title="Weather Dashboard"
+            year="2025"
+            category="Front-End React"
+            description="A responsive weather dashboard built with React, Redux Toolkit, and Tailwind CSS. The app integrates the OpenWeather API to display real-time weather data and 5-day forecasts, featuring city-based search and a clean, modern UI."
+          />
         </ul>
       </div>
     </article>

@@ -1,0 +1,96 @@
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #222;
+}
+
+.year {
+  font-size: 1rem;
+  color: #777;
+}
+
+.description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  color: #444;
+}
+
+.stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+  padding: 0;
+  list-style: none;
+}
+
+.stackItem {
+  background: #f1f5f9;
+  padding: 0.4rem 0.8rem;
+  border-radius: 9999px;
+  font-size: 0.9rem;
+  color: #334155;
+}
+
+.imageWrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.imageCard {
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease;
+}
+
+.imageCard img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.imageCard:hover {
+  transform: scale(1.03);
+}
+
+.links {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.linkButton {
+  padding: 0.7rem 1.4rem;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #2563eb, #1e40af);
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.linkButton:hover {
+  background: linear-gradient(135deg, #1e40af, #1e3a8a);
+  transform: translateY(-2px);
+}

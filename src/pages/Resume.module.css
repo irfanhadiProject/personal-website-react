@@ -1,6 +1,47 @@
 .resume {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 16px;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #1e293b;
+  border-bottom: 2px solid #e2e8f0;
+  padding-bottom: 0.3rem;
+}
+
+.entry {
   display: flex;
-  justify-content: center;
-  padding: 80px 0;
-  background-color: #fcfeff;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6rem 0;
+  border-bottom: 1px dashed #e2e8f0;
+}
+
+.entry:last-child {
+  border-bottom: none;
+}
+
+.entryText {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #334155;
+}
+
+.entryTag {
+  font-size: 0.85rem;
+  background: #f1f5f9;
+  color: #475569;
+  padding: 0.25rem 0.6rem;
+  border-radius: 9999px;
+  white-space: nowrap;
 }

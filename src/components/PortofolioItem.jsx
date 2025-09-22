@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import styles from './PortofolioItem.module.css';
 
 function PortofolioItem({
-  link,
+  id,
   image,
   alt,
   title,
@@ -12,7 +12,7 @@ function PortofolioItem({
 }) {
   return (
     <li className={styles.item}>
-      <Link to={link}>
+      <Link to={`/portofolio/${id}`}>
         <img src={image} alt={alt} className={styles.image} />
         <div className={styles.content}>
           <h3 className={styles.title}>{title}</h3>

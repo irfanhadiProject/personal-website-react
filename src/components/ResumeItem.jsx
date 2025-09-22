@@ -2,10 +2,12 @@ import styles from './ResumeItem.module.css';
 
 function ResumeItem({ title, children }) {
   return (
-    <li className={styles.item}>
+    <section className={styles.item}>
       <h3 className={styles.title}>{title}</h3>
-      <ul className={styles.content}>{children}</ul>
-    </li>
+      <div className={styles.content}>
+        <ul>{children}</ul>
+      </div>
+    </section>
   );
 }
 
