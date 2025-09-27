@@ -6,22 +6,38 @@ function Footer() {
       <div className={styles.container}>
         <ul>
           <li>
-            <a href="https://www.linkedin.com/in/irfan-hadi-364471223/">
+            <a
+              href="https://www.linkedin.com/in/irfan-hadi-364471223/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img src="/linkedin-icon.svg" />
             </a>
           </li>
           <li>
-            <a href="https://www.instagram.com/irfan._.hadi/">
+            <a
+              href="https://www.instagram.com/irfan__hadi__/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img src="/instagram-icon.svg" />
             </a>
           </li>
           <li>
-            <a href="https://github.com/irfanhadiProject">
+            <a
+              href="https://github.com/irfanhadiProject"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img src="/github-icon.svg" />
             </a>
           </li>
           <li>
-            <a href="https://irfanhadiproject.github.io/personal-website/">
+            <a
+              href="https://irfanhadi.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img src="/web-icon.svg" />
             </a>
           </li>

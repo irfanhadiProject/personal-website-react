@@ -1,6 +1,26 @@
-import booksReviewImage from '../assets/images/books-review-app.png';
-import triviaQuiz from '../assets/images/trivia-quiz.png';
-import weatherDashboard from '../assets/images/weather-dashboard.png';
+const weatherImages = import.meta.glob(
+  '../assets/images/weather-dashboard/*.{png,jpg}',
+  { eager: true }
+);
+const triviaImages = import.meta.glob(
+  '../assets/images/trivia-quiz/*.{png,jpg}',
+  { eager: true }
+);
+const booksImages = import.meta.glob(
+  '../assets/images/books-review/*.{png,jpg}',
+  { eager: true }
+);
+
+const toMap = (obj) =>
+  Object.fromEntries(
+    Object.entries(obj).map(([path, module]) => {
+      const fileName = path
+        .split('/')
+        .pop()
+        .replace(/\.[^/.]+$/, '');
+      return [fileName, module.default];
+    })
+  );
 
 const projects = {
   'weather-dashboard': {
@@ -19,7 +39,12 @@ const projects = {
         label: 'GitHub Repo',
       },
     ],
-    images: [weatherDashboard],
+    images: {
+      thumbnail: toMap(weatherImages)['thumbnail'],
+      screenshots: [],
+      code: [],
+      design: [],
+    },
   },
   'trivia-quiz': {
     title: 'Trivia Quiz Game',
@@ -37,21 +62,33 @@ const projects = {
         label: 'GitHub Repo',
       },
     ],
-    images: [triviaQuiz],
+    images: {
+      thumbnail: toMap(triviaImages)['thumbnail'],
+      screenshots: [],
+      code: [],
+      design: [],
+    },
   },
   'books-review': {
     title: 'Books Review App',
     year: '2024',
     stack: ['Node.js', 'Express', 'PostgreSQL', 'EJS'],
     description:
-      'A full-stack web application for reviewing books, built using Node.js, Express, PostgreSQL, and EJS. The app features a responsive UI, dynamic data rendering, and full CRUD functionality. The project is version-controlled with Git and hosted on GitHub.',
+      'A full-stack web application for reviewing books, built using Node.js, Express, PostgreSQL, and EJS. The app features a responsive UI, dynamic data rendering, and full CRUD functionality.',
+
+    images: {
+      thumbnail: toMap(booksImages)['thumbnail'],
+      screenshots: [],
+      code: [],
+      design: [],
+    },
+
     links: [
       {
-        href: 'https://github.com/yourusername/books-review',
+        href: 'https://github.com/irfanhadiProject/books-review',
         label: 'GitHub Repo',
       },
     ],
-    images: [booksReviewImage],
   },
 };
 

@@ -1,8 +1,8 @@
 import PortofolioItem from './PortofolioItem';
 import styles from './ProjectHighlight.module.css';
-import booksReviewImage from '../assets/images/books-review-app.png';
-import triviaQuiz from '../assets/images/trivia-quiz.png';
-import weatherDashboard from '../assets/images/weather-dashboard.png';
+import booksReviewImage from '../assets/images/books-review/thumbnail.png';
+import triviaQuiz from '../assets/images/trivia-quiz/thumbnail.png';
+import weatherDashboard from '../assets/images/weather-dashboard/thumbnail.png';
 
 function ProjectHighlight() {
   return (

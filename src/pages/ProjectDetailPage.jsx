@@ -1,4 +1,3 @@
-// pages/ProjectDetail.jsx
 import { useParams } from 'react-router-dom';
 import projectsData from '../data/projectsData';
 import ProjectDetail from '../components/ProjectDetail';
@@ -14,6 +13,8 @@ export default function ProjectDetailPage() {
   return (
     <ProjectDetail
       title={project.title}
+      stack={project.stack}
+      year={project.year}
       description={project.description}
       images={project.images}
       links={project.links}
