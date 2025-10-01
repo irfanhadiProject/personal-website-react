@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useState } from 'react';
-import styles from './lightbox.module.css';
+import styles from './Lightbox.module.css';
 
 function Lightbox({ images, initialIndex = 0, onClose }) {
   const [currentIndex, setCurrentIndex] = useState(initialIndex);
