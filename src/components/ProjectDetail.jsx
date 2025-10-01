@@ -1,4 +1,6 @@
+import { useState } from 'react';
 import styles from './ProjectDetail.module.css';
+import Lightbox from './Lightbox';
 
 export default function ProjectDetail({
   title,
@@ -8,74 +10,53 @@ export default function ProjectDetail({
   links,
   images = {},
 }) {
+  const [lightbox, setLightBox] = useState({
+    isOpen: false,
+    src: '',
+    index: 0,
+    group: '',
+  });
+
+  const openLightbox = (src, index, group) =>
+    setLightBox({ isOpen: true, src, index, group });
+  const closeLightbox = () => setLightBox({ ...lightbox, isOpen: false });
+
+  const renderImageGroup = (groupName, groupImages) => (
+    <div className={styles.group}>
+      <h2 className={styles.groupTitle}>{groupName}</h2>
+      <div className={styles.imageGrid}>
+        {groupImages.map((src, idx) => (
+          <img
+            key={idx}
+            src={src}
+            alt="preview"
+            className={styles.image}
+            onClick={() => openLightbox(src, idx, groupName)}
+          />
+        ))}
+      </div>
+    </div>
+  );
   return (
     <div className={styles.container}>
       <header className={styles.header}>
         <h1 className={styles.title}>{title}</h1>
         {year && <span className={styles.year}>{year}</span>}
       </header>
-
       <p className={styles.description}>{description}</p>
+      <div className={styles.stack}>
+        {stack.map((tech) => (
+          <span key={tech} className={styles.tech}>
+            {tech}
+          </span>
+        ))}
+      </div>
 
-      {stack?.length > 0 && (
-        <ul className={styles.stack}>
-          {stack.map((tech, idx) => (
-            <li key={idx} className={styles.stackItem}>
-              {tech}
-            </li>
-          ))}
-        </ul>
-      )}
-
-      {images.thumbnail && (
-        <div className={styles.section}>
-          <h2 className={styles.sectionTitle}>Thumbnail</h2>
-          <div className={styles.imageWrapper}>
-            <div className={styles.imageCard}>
-              <img src={images.thumbnail} alt={`${title} thumbnail`} />
-            </div>
-          </div>
-        </div>
-      )}
-
-      {images.screenshots?.length > 0 && (
-        <div className={styles.section}>
-          <h2 className={styles.sectionTitle}>Screenshots</h2>
-          <div className={styles.imageWrapper}>
-            {images.screenshots.map((src, idx) => (
-              <div key={idx} className={styles.imageCard}>
-                <img src={src} alt={`${title} screenshot ${idx + 1}`} />
-              </div>
-            ))}
-          </div>
-        </div>
-      )}
-
-      {images.codeSnapshots?.length > 0 && (
-        <div className={styles.section}>
-          <h2 className={styles.sectionTitle}>Code Snapshots</h2>
-          <div className={styles.imageWrapper}>
-            {images.codeSnapshots.map((src, idx) => (
-              <div key={idx} className={styles.imageCard}>
-                <img src={src} alt={`${title} code snapshot ${idx + 1}`} />
-              </div>
-            ))}
-          </div>
-        </div>
-      )}
-
-      {images.design?.length > 0 && (
-        <div className={styles.section}>
-          <h2 className={styles.sectionTitle}>Design</h2>
-          <div className={styles.imageWrapper}>
-            {images.design.map((src, idx) => (
-              <div key={idx} className={styles.imageCard}>
-                <img src={src} alt={`${title} design mockup ${idx + 1}`} />
-              </div>
-            ))}
-          </div>
-        </div>
-      )}
+      {images.screenshots?.length > 0 &&
+        renderImageGroup('Screenshots', images.screenshots)}
+      {images.codeSnapshots?.length > 0 &&
+        renderImageGroup('Code Snapshots', images.codeSnapshots)}
+      {images.design?.length > 0 && renderImageGroup('Designs', images.design)}
 
       {links?.length > 0 && (
         <div className={styles.links}>
@@ -85,12 +66,20 @@ export default function ProjectDetail({
               href={href}
               target="_blank"
               rel="noopener noreferrer"
-              className={styles.linkButton}
+              className={styles.link}
             >
               {label}
             </a>
           ))}
         </div>
+      )}
+
+      {lightbox.isOpen && (
+        <Lightbox
+          initialIndex={lightbox.index}
+          images={images[lightbox.group.toLowerCase()]}
+          onClose={closeLightbox}
+        />
       )}
     </div>
   );

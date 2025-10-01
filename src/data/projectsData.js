@@ -40,15 +40,18 @@ const projects = {
       },
     ],
     images: {
-      thumbnail: toMap(weatherImages)['thumbnail'],
-      screenshots: [],
-      code: [],
+      screenshots: [
+        toMap(weatherImages)['thumbnail'],
+        toMap(weatherImages)['ss1'],
+        toMap(weatherImages)['ss2'],
+      ],
+      codeSnapshots: [],
       design: [],
     },
   },
   'trivia-quiz': {
     title: 'Trivia Quiz Game',
-    year: '2024',
+    year: '2025',
     stack: ['React', 'Redux', 'Tailwind'],
     description:
       'A responsive trivia quiz game built with React and Redux, featuring category-based questions from an external API. The app includes score tracking, instant feedback, and a clean UI styled with Tailwind CSS.',
@@ -63,9 +66,12 @@ const projects = {
       },
     ],
     images: {
-      thumbnail: toMap(triviaImages)['thumbnail'],
-      screenshots: [],
-      code: [],
+      screenshots: [
+        toMap(triviaImages)['thumbnail'],
+        toMap(triviaImages)['ss1'],
+        toMap(triviaImages)['ss2'],
+      ],
+      codeSnapshots: [],
       design: [],
     },
   },
@@ -77,9 +83,12 @@ const projects = {
       'A full-stack web application for reviewing books, built using Node.js, Express, PostgreSQL, and EJS. The app features a responsive UI, dynamic data rendering, and full CRUD functionality.',
 
     images: {
-      thumbnail: toMap(booksImages)['thumbnail'],
-      screenshots: [],
-      code: [],
+      screenshots: [
+        toMap(booksImages)['ss1'],
+        toMap(booksImages)['ss2'],
+        toMap(booksImages)['ss3'],
+      ],
+      codeSnapshots: [],
       design: [],
     },
 
