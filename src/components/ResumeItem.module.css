@@ -39,7 +39,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap; /* agar tag pindah ke bawah jika sempit */
+  flex-wrap: wrap;
+  padding: 3px 0px;
 }
 
 .content p {
@@ -47,7 +48,7 @@
   font-weight: 500;
   color: #334155;
   margin-right: 0.5rem;
-  word-break: break-word; /* penting untuk teks panjang */
+  word-break: break-word;
 }
 
 .content span {

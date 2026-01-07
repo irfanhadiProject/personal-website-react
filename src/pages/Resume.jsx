@@ -8,38 +8,37 @@ function Resume() {
     <article className={styles.resume}>
       <Container title="Resume">
         <ResumeItem title="education">
-          <ResumeEntry text="Bachelor of Physics - ITS" tag="2019–2024" />
-          <ResumeEntry text="Science - MAN 2 Pontianak" tag="2016–2019" />
+          <ResumeEntry text="Bachelor of Physics — ITS" tag="2019–2024" />
+          <ResumeEntry text="Science — MAN 2 Pontianak" tag="2016–2019" />
         </ResumeItem>
 
         <ResumeItem title="skills">
-          <ResumeEntry text="Matlab" tag="Basic" />
-          <ResumeEntry text="Microsoft Office" tag="Proficient" />
-          <ResumeEntry text="Origin Lab" tag="Basic" />
-          <ResumeEntry text="Web Development" tag="Proficient" />
-          <ResumeEntry text="Web Design" tag="Basic" />
-          <ResumeEntry text="Web Programming" tag="Basic" />
+          <ResumeEntry text="Frontend: HTML, CSS, JavaScript, React" />
+          <ResumeEntry text="Backend: Node.js, Express.js, REST APIs" />
+          <ResumeEntry text="Database: PostgreSQL, SQL" />
+          <ResumeEntry text="Tools: Git, Testing, Deployment" />
         </ResumeItem>
 
-        <ResumeItem title="course">
-          <ResumeEntry
-            text="Udemy - The complete 2023 web development bootcamp"
-            tag="2023-2024"
+        <ResumeItem title="courses">
+          <ResumeEntry 
+            text="Backend Javascript Expert (Express.js, Tests, CI/CD)"
+            tag="Dicoding"
           />
           <ResumeEntry
-            text="Udemy - The ultimate react course 2024: React, Redux, & more"
-            tag="2024-2025"
+            text="Full-Stack Web Development (HTML, CSS, JS, Node.js)"
+            tag="Udemy"
+          />
+          <ResumeEntry
+            text="React & State Management (Hooks, Redux)"
+            tag="Udemy"
           />
         </ResumeItem>
 
         <ResumeItem title="work experience">
-          <ResumeEntry text="Electrospinning Lab Assistant" tag="2022–2023" />
-          <ResumeEntry text="Private Quran Teacher" tag="2022–2023" />
           <ResumeEntry
-            text="Math/Physics Tutor for High School"
+            text="Math & Physics Tutor — Teaching problem-solving and structured thinking"
             tag="2025–Present"
           />
-          <ResumeEntry text="Math Tutor for Elementary" tag="2025–Present" />
         </ResumeItem>
       </Container>
     </article>

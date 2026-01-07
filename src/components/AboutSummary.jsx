@@ -6,10 +6,7 @@ function AboutSummary() {
       <div>
         <h2>My Profile</h2>
         <p>
-          Hi! I'm a Front-End Developer with a background in Physics. I enjoy
-          building clean, user-friendly websites using HTML, CSS, JavaScript,
-          and React. I'm a quick learner who loves exploring new tech and
-          turning ideas into real, working products.
+          I’m a Web Developer focused on Front-End development with hands-on experience in Backend systems. I’ve built web applications using React on the front end, Node.js & Express for backend services, and PostgreSQL for data management. I’m familiar with RESTful API design, basic authentication, testing, and deployment workflows.
         </p>
       </div>
     </article>

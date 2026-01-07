@@ -8,9 +8,7 @@ function Intro() {
         <div className={styles.content}>
           <h1 className={styles.name}>I'm Irfan</h1>
           <p className={styles.description}>
-            Physics graduate, passionate about Web Development. Skilled in HTML,
-            CSS, JavaScript, and React.js. Quick learner, self-motivated, and
-            excited to grow through real-world projects.
+            Web Developer focused on building responsive front-end interfaces and reliable backend services using React, Express.js, and PostgreSQL.
           </p>
           <a href="/CV_Irfan_Hadi.pdf" download="CV_Irfan_Hadi.pdf">
             <button>Download Resume</button>
