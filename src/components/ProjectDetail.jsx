@@ -21,7 +21,7 @@ export default function ProjectDetail({
     setLightBox({ isOpen: true, src, index, group });
   const closeLightbox = () => setLightBox({ ...lightbox, isOpen: false });
 
-  const renderImageGroup = (groupName, groupImages) => (
+  const renderImageGroup = (groupName, groupKey, groupImages) => (
     <div className={styles.group}>
       <h2 className={styles.groupTitle}>{groupName}</h2>
       <div className={styles.imageGrid}>
@@ -31,7 +31,7 @@ export default function ProjectDetail({
             src={src}
             alt="preview"
             className={styles.image}
-            onClick={() => openLightbox(src, idx, groupName)}
+            onClick={() => openLightbox(src, idx, groupKey)}
           />
         ))}
       </div>
@@ -53,10 +53,10 @@ export default function ProjectDetail({
       </div>
 
       {images.screenshots?.length > 0 &&
-        renderImageGroup('Screenshots', images.screenshots)}
+        renderImageGroup('Screenshots', 'screenshots', images.screenshots)}
       {images.codeSnapshots?.length > 0 &&
-        renderImageGroup('Code Snapshots', images.codeSnapshots)}
-      {images.design?.length > 0 && renderImageGroup('Designs', images.design)}
+        renderImageGroup('Code Snapshots', 'codeSnapshots', images.codeSnapshots)}
+      {images.design?.length > 0 && renderImageGroup('Designs', 'designs', images.design)}
 
       {links?.length > 0 && (
         <div className={styles.links}>
@@ -77,7 +77,7 @@ export default function ProjectDetail({
       {lightbox.isOpen && (
         <Lightbox
           initialIndex={lightbox.index}
-          images={images[lightbox.group.toLowerCase()]}
+          images={images[lightbox.group]}
           onClose={closeLightbox}
         />
       )}
