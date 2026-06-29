@@ -45,7 +45,11 @@ const projects = {
         toMap(weatherImages)['ss1'],
         toMap(weatherImages)['ss2'],
       ],
-      codeSnapshots: [],
+      codeSnapshots: [
+        toMap(weatherImages)['weather-state-logic'],
+        toMap(weatherImages)['weather-api-util'],
+        toMap(weatherImages)['curated-logic-hooks']
+      ],
       design: [],
     },
   },
